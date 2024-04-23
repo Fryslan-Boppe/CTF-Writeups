@@ -1,14 +1,14 @@
 # menu-redirection
-This challenge involved using a webhook and general analysis of the webpage.
 
-The first step was to create an account on the website with a unique webhook url on https://webhook.site.
+![image](https://github.com/Fryslan-Boppe/notes/assets/96194510/a4d8d38f-c2b1-4141-a11e-c8ec50fed4ab)
+
+The initial step involves creating an account on the designated website. In the URL field, enter a URL from https://webhook.site to receive callbacks from the website.
 
 ![image](https://github.com/Fryslan-Boppe/notes/assets/96194510/6c75ffcb-a40d-440f-94dd-baf11a4e2895)
 
-After you created an account you probably saw the following hint in the challenge description: "I always say that if it's on the menu, you should be able to order it." 
+Following the account setup, users gain the ability to order various food items. Upon placing an order for a food item, a POST request is sent to your specified webhook.
 
-This indicated that a food item was not being displayed on the menu page. Upon inspecting the source you'll see that cupcake was the hidden item.
-
+The challenge description hints at the presence of a concealed food item on the menu. Upon inspecting the source code of the menu page, it becomes apparent that "cupcake" is the hidden item.
 ```html
 </section>
   <section class="hero mb-6">
@@ -25,11 +25,11 @@ This indicated that a food item was not being displayed on the menu page. Upon i
         </div>
     </div>
 ```
-If we order a food item on the order page and intercept the POST request with Burp Suite we can change the value from pizza to cupcake.
+Now aware of this hidden item, users can navigate to the order page and intercept the POST request using tools like Burp Suite. This allows for the modification of the item value from "pizza" to "cupcake".
 
 ![image](https://github.com/Fryslan-Boppe/notes/assets/96194510/b73b20be-2b2b-433a-99e2-254787474afa)
 
-After we ordered the cupcake we will get a POST request in our webhook with an image of a cupcake that contains the flag.
+Upon successfully ordering the cupcake, a POST request containing an image of the cupcake, which harbors the flag, will be received in the designated webhook.
 
 ![image](https://github.com/Fryslan-Boppe/notes/assets/96194510/b410215f-5374-459c-946c-d91e5e1fb238)
 
