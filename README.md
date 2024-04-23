@@ -1,3 +1,1 @@
 # CTF-Writeups
-notities
-Test
