@@ -3,4 +3,4 @@ authors = ["jitze", "dannie", "jogchum"]
 language = "nl"
 multilingual = false
 src = "src"
-title = "Notities"
+title = "notes"
