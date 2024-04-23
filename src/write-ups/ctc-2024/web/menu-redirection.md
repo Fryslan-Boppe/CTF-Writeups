@@ -1,10 +1,10 @@
 # menu-redirection
 
-![image](./screenshot1.jpg)
+![image](./menu-redirection1.jpg)
 
 The initial step involves creating an account on the designated website. In the URL field, enter a URL from https://webhook.site to receive callbacks from the website.
 
-![image](./screenshot2.jpg)
+![image](./menu-redirection2.jpg)
 
 Following the account setup, users gain the ability to order various food items. Upon placing an order for a food item, a POST request is sent to your specified webhook.
 
@@ -27,12 +27,12 @@ The challenge description hints at the presence of a concealed food item on the 
 ```
 Now aware of this hidden item, users can navigate to the order page and intercept the POST request using tools like Burp Suite. This allows for the modification of the item value from "pizza" to "cupcake".
 
-![image](./screenshot4.jpg)
+![image](./menu-redirection3)
 
 Upon successfully ordering the cupcake, a POST request containing an image of the cupcake, which harbors the flag, will be received in the designated webhook.
 
-![image](./screenshot5.jpg)
+![image](./menu-redirection4)
 
 Flag:
 
-![image](./screenshot6.jpg)
+![image](./menu-redirection5)
