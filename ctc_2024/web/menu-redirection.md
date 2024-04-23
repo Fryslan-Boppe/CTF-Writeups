@@ -8,8 +8,22 @@ After you created an account you probably saw the following hint in the challeng
 
 This indicated that a food item was not being displayed on the menu page. Upon inspecting the source you'll see that cupcake was the hidden item.
 
-![image](https://github.com/Fryslan-Boppe/notes/assets/96194510/4d3fb9bf-8f95-4987-ab64-dfe0eca38340)
-
+```html
+</section>
+  <section class="hero mb-6">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-one-third">
+          <figure class="image is-square">
+            <img src="/menu/cupcake.webp"/>
+          </figure>
+        </div>
+        <div class="column ml-6">
+          <p class="title is-size-1">Cupcake</p>
+          <p class="is-size-2">Heerlijke cupcakes met niet te versmaden cyber sprinkles, opgetopt met een prachtig vlaggetje.</p>
+        </div>
+    </div>
+```
 If we order a food item on the order page and intercept the POST request with Burp Suite we can change the value from pizza to cupcake.
 ![image](https://github.com/Fryslan-Boppe/notes/assets/96194510/b73b20be-2b2b-433a-99e2-254787474afa)
 
