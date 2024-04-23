@@ -1,3 +1,3 @@
-# notes
+# CTF-Writeups
 notities
 Test
