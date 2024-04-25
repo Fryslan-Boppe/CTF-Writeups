@@ -8,5 +8,6 @@
 * Speed (baud): 115200
 * Flow control: None
 
+Start the putty terminal and the flag will pop-up:
 ![image](./wel-com2.png)
 
