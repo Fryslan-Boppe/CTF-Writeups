@@ -27,6 +27,12 @@ try:
 ```
 
 #### Step 3:
+Put the files back on the esp8266 when your changes have been made with:
+
+```bash
+ampy -p (COM-PORT) put boot.py
+```
+
 Engage in the game and achieve a score of 1. Then, submit this score to the leaderboard, resulting in a remarkable 9000+ score on the leaderboard.
 
 ```python
